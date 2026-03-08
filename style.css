@@ -5,7 +5,7 @@
 }
 body{
     margin: 0px;
-     background: url("../imgs/bg.png");
+     background: url("bg.png");
 
 }
 /*tete de page*/
@@ -125,10 +125,10 @@ nav.nav1{
     box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Ajoute une ombre portée */
 }
 .soleil-toile{
-    background-image:url(../imgs/soleil-toile.jpg);
+    background-image:url(soleil-toile.webp);
 }
 .masque-toile{
-    background-image:url(../imgs/masque-toile.jpg);
+    background-image:url(masque-toile.webp);
 }
 
 .toile-details{
