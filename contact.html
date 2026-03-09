@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-        <link rel="stylesheet" href="style.css"> 
-        <title>Les-création-de-Ben</title>
-        <meta charset='utf-8'>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<body>
-    <section class="top-page">
-        <header class="header">
-             <img src="logo.png" alt="logo du site">
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Contact - Les Créations de Ben</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> 
+</head> <body>
+    <header class="header">
+        <div class="top-page-content"> <img src="logo.png" alt="Logo Les Créations de Ben">
              <nav class="nav1">
-                <li><a href="index.html"> Accueil</a></li>
-                <li><a href="real.html"> réalisations numériques</a></li>
-                <li><a href="contact.html">contact</a></li>
+                <ul> <li><a href="index.html">Accueil</a></li>
+                    <li><a href="real.html">Réalisations numériques</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </nav>
+        </div>
     </header>
+
     <main class="contact-container">
         <h2>Me contacter</h2>
         <p class="contact-intro">Un projet en tête ? Une question sur une œuvre ? N'hésitez pas à m'envoyer un message.</p>
 
         <section class="contact-flex">
-            <form class="contact-form">
+            <form class="contact-form" action="#" method="POST">
                 <div class="form-group">
                     <label for="nom">Nom</label>
                     <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
@@ -40,8 +42,12 @@
             <div class="contact-info">
                 <h3>Retrouvez-moi sur</h3>
                 <div class="social-links">
-                    <a href="https://www.instagram.com/_northben_/"><i class="fab fa-instagram"></i> Instagram</a>
-                    <a href="#"><i class="fas fa-envelope"></i> hejda@outlook.fr</a>
+                    <a href="https://www.instagram.com/_northben_/" target="_blank" rel="noopener">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                    <a href="mailto:hejda@outlook.fr">
+                        <i class="fas fa-envelope"></i> hejda@outlook.fr
+                    </a>
                 </div>
             </div>
         </section>
