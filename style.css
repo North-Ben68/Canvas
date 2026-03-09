@@ -283,9 +283,95 @@ h2 {
 }
 
 /* --- RESPONSIVE --- */
-@media (max-width: 768px) {
-    .nav1 { display: none; } /* On cache le menu haut sur mobile pour simplifier */
-    .galerie-num { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; }
+/* ==========================================
+   SECTION RESPONSIVE (CORRIGÉE)
+   ========================================== */
+
+/* 1. TABLETTES ET PETITS ÉCRANS (Dès 900px) */
+@media screen and (max-width: 900px) {
+    
+    /* On empile le logo, le texte et la nav */
+    header.header {
+        flex-direction: column !important;
+        text-align: center;
+        gap: 20px;
+    }
+
+    /* On annule la largeur fixe de 400px qui faisait buguer l'affichage */
+    nav.nav1 {
+        width: auto !important; 
+        margin-left: 0 !important;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* On réduit le titre géant qui dépasse sur les côtés */
+    .big-title {
+        font-size: 45px !important;
+        line-height: 1.2;
+    }
+
+    .landing-page {
+        padding: 20px;
+    }
+
+    /* On passe les services l'un sous l'autre */
+    .service {
+        flex-direction: column;
+        gap: 30px;
+        margin: 20px;
+    }
+
+    /* Ajustement des photos de toiles */
+    .customer {
+        margin: 20px;
+    }
+    .customer-pro {
+        flex-direction: column;
+    }
+}
+
+/* 2. MOBILES (Dès 600px et moins) */
+@media screen and (max-width: 600px) {
+    
+    header img {
+        width: 180px; /* Logo plus petit sur mobile */
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    /* Galerie numérique : 2 colonnes propres */
+    .galerie-num {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .art-card {
+        border-width: 2px; /* Bordures plus fines */
+    }
+
+    /* Menu de catégories (Animaux, Masques...) */
+    .sub-nav {
+        gap: 10px;
+        padding: 10px;
+    }
+    .sub-nav a {
+        font-size: 0.8rem;
+    }
+
+    /* Formulaire de contact */
+    .contact-flex {
+        flex-direction: column;
+        padding: 15px;
+    }
+    .contact-info {
+        border-left: none;
+        border-top: 1px solid #333;
+        padding: 20px 0 0 0;
+    }
 }
 
 /*contact/
@@ -389,14 +475,3 @@ h2 {
 }
 
 /* Mobile */
-@media (max-width: 768px) {
-    .contact-flex {
-        flex-direction: column;
-    }
-    .contact-info {
-        border-left: none;
-        border-top: 1px solid #333;
-        padding-left: 0;
-        padding-top: 30px;
-    }
-}
