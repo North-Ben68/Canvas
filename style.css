@@ -21,6 +21,7 @@
 
 body {
     background: url("bg.png");
+    background-size: cover;
     color: black;
     line-height: 1.6;
     scroll-behavior: smooth;
@@ -91,6 +92,11 @@ nav.nav1 {
     font-family: 'Abril Fatface', cursive;
     font-size: 80px;
     font-weight: 100;
+}
+.p-title{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 65px;
+
 }
 
 /* Services */
@@ -344,6 +350,24 @@ h2 {
     .service { flex-direction: column; }
     .customer-pro { flex-direction: column; }
 }
+@media (max-width: 300px) {
+    h1, .big-title{ 
+        font-size: 1.8rem; 
+        word-wrap: break-word; 
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box; 
+    }
+}
+@media screen and (max-width: 300px) { 
+    .p-title{
+font-size: 1.8rem; 
+        word-wrap: break-word; 
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+}
 
 @media screen and (max-width: 600px) {
     .galerie-num { grid-template-columns: repeat(2, 1fr) !important; }
@@ -351,16 +375,36 @@ h2 {
     .contact-info { border-left: none; border-top: 1px solid #333; padding-top: 20px; }
 }
 @media screen and (max-width: 768px) {
-    /* Sur mobile, on empile ou on réduit les écarts */
+    
     .top-page {
-        flex-direction: column; /* Met le nav sous le logo si c'est trop serré */
+        flex-direction: column; 
         height: auto;
         text-align: center;
     }
     .top-page-content{
-        flex-direction: column; /* Met le nav sous le logo si c'est trop serré */
+        flex-direction: column;
         height: auto;
         text-align: center;
 
+    }
+}
+@media (max-width: 480px) {
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    nav ul {
+        padding: 0;
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+
+    nav li {
+        margin: 5px;
     }
 }
