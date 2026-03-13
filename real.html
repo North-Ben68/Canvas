@@ -8,18 +8,17 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-
     <header class="header">
-        <section class="top-page">
+        <div class="logo-container">
             <img src="logo.png" alt="Logo Les Créations de Ben">
-            <nav class="nav1">
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="real.html">Réalisations numériques</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </section>
+        </div>
+        <nav class="nav1">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="real.html" class="active">Réalisations numériques</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <nav class="sub-nav">
@@ -29,7 +28,7 @@
     </nav>
 
     <main class="container">
-        <section id="animaux">
+        <section id="animaux" class="gallery-section">
             <h2>Animaux</h2>
             <div class="galerie-num">
                 <div class="art-card">
@@ -44,28 +43,16 @@
                         <div class="overlay"><span>Voir l'œuvre</span></div>
                     </a>
                 </div>
-                <div class="art-card">
+                 <div class="art-card">
                     <a href="animal3.webp" target="_blank">
                         <img src="animal3.webp" alt="Dessin Animal 3">
-                        <div class="overlay"><span>Voir l'œuvre</span></div>
-                    </a>
-                </div>
-                <div class="art-card">
-                    <a href="animal4.webp" target="_blank">
-                        <img src="animal4.webp" alt="Dessin Animal 4">
-                        <div class="overlay"><span>Voir l'œuvre</span></div>
-                    </a>
-                </div>
-                <div class="art-card">
-                    <a href="animal5.webp" target="_blank">
-                        <img src="animal5.webp" alt="Dessin Animal 5">
                         <div class="overlay"><span>Voir l'œuvre</span></div>
                     </a>
                 </div>
             </div>
         </section>
 
-        <section id="masques">
+        <section id="masques" class="gallery-section">
             <h2>Masques</h2>
             <div class="galerie-num">
                 <div class="art-card">
@@ -80,34 +67,10 @@
                         <div class="overlay"><span>Voir le dessin</span></div>
                     </a>
                 </div>
-                <div class="art-card">
-                    <a href="masque3.webp" target="_blank">
-                        <img src="masque3.webp" alt="Masque 3">
-                        <div class="overlay"><span>Voir le dessin</span></div>
-                    </a>
-                </div>
-                <div class="art-card">
-                    <a href="masque4.webp" target="_blank">
-                        <img src="masque4.webp" alt="Masque 4">
-                        <div class="overlay"><span>Voir le dessin</span></div>
-                    </a>
-                </div>
-                <div class="art-card">
-                    <a href="masque5.webp" target="_blank">
-                        <img src="masque5.webp" alt="Masque 5">
-                        <div class="overlay"><span>Voir le dessin</span></div>
-                    </a>
-                </div>
-                <div class="art-card">
-                    <a href="masque6.webp" target="_blank">
-                        <img src="masque6.webp" alt="Masque 6">
-                        <div class="overlay"><span>Voir le dessin</span></div>
-                    </a>
-                </div>
             </div>
         </section>
 
-        <section id="divers">
+        <section id="divers" class="gallery-section">
             <h2>Divers</h2>
             <div class="galerie-num">
                 <div class="art-card">
@@ -115,13 +78,12 @@
                         <img src="divers1.webp" alt="Dessin Divers 1">
                         <div class="overlay"><span>Voir le dessin</span></div>
                     </a>
-                </div>
-                <div class="art-card">
+            </div>
+               <div class="art-card">
                     <a href="divers2.webp" target="_blank">
-                        <img src="divers2.webp" alt="Dessin Divers 2">
+                        <img src="divers2.webp" alt="Dessin Divers 1">
                         <div class="overlay"><span>Voir le dessin</span></div>
                     </a>
-                </div>
             </div>
         </section>
     </main>
@@ -130,6 +92,5 @@
         <a href="index.html" class="btn-back">Retour à l'accueil</a>
         <p>&copy; 2026 Les Créations de Ben</p>
     </footer>
-
 </body>
 </html>
