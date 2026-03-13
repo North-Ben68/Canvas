@@ -59,7 +59,7 @@
    
    .nav1 li a {
        text-decoration: none;
-       color: var(--text-main);
+       color: black;
        font-weight: 600;
        font-size: 1rem;
        transition: var(--transition);
